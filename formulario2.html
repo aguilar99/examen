@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Documento </title>
+    <style>
+        fieldset{
+            border: 0.5em groove olive;
+            width: 50vw;
+            left: 25vw;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Datos de entrada</legend>     
+        <label for="nombre">Nombre usuario:</label>
+        <input type="text" id="nombre" pattern="[a-zA-Z0-9]{6,8}"><br>
+        <label for="contra">Contraseña:</label>
+        <input type="password" id="contra" required="required"><br>
+        <label for="num">Números</label>
+        <!-- <input type="text" name="num" pattern="[0-9]" placeholder="9" title="Escribe los numeros de esta forma: 9">
+        
+        [\+]? significa que el caracter "+" puede estar o no
+        -->
+        <input type="text" name="num" pattern="[\+]?[0-9]{2,8}" minlength="2" maxlength="8" >
+        <input type="submit">
+    </fieldset>
+    <br>
+
+    </form>
+</body>
+</html>
